@@ -157,7 +157,7 @@ def muunna(arvo, etu_val, taka_val, kaasu_val):
     arvo = float(arvo)
 
     molar_mass = kaasu_arvot.get(kaasu_val, 1)
-    if kaasu_val == "CH4" or "N2O":
+    if kaasu_val == "CH4" or kaasu_val == "N2O":
         tulos = arvo * molar_mass * 0.001
     else:
         tulos = arvo * molar_mass
